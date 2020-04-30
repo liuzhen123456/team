@@ -35,6 +35,7 @@ Route::prefix('user')->middleware("islogin") ->group(function(){
 	Route::get('del/{id}','Index\UserController@destroy');
 	//修改
 	Route::get('update/{id}','Index\UserController@edit');
+	Route::post('edit/{id}','Index\UserController@update');
 });
 //登录 注册
 Route::prefix('/login')->group(function(){
