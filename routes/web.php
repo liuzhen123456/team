@@ -16,3 +16,14 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+    Route::get("admin",function(){
+        return view("admin.index");
+    });
+    Route::get("/index","Admin\UserController@index");
+    Route::post("/visadd","Admin\UserController@visadd");
+    Route::get("/vislist","Admin\UserController@vislist");
+    Route::get("/visdele/{id}","Admin\UserController@visdele");
+    Route::get("/visup/{id}","Admin\UserController@visup");
+    Route::post("/visupdate/{id}","Admin\UserController@visupdate");
+    Route::get("/visname","Admin\UserController@visname");
+    Route::get("/visgai","Admin\UserController@visgai");
