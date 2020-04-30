@@ -1,5 +1,5 @@
 ﻿@extends('layout.index')
-@section('title', '首页')
+@section('title', '团队')
 @section('content')
 		<div class="main-container" id="main-container">
 			<script type="text/javascript">
@@ -22,7 +22,7 @@
 						<ul class="breadcrumb">
 							<li>
 								<i class="icon-home home-icon"></i>
-								<a href="/">首页</a>
+								<a href="#">首页</a>
 							</li>
 							<li class="active">后台管理控制台</li>
 						</ul><!-- .breadcrumb -->
@@ -43,25 +43,7 @@
 							<div class="col-xs-12">
 								<!-- PAGE CONTENT BEGINS -->
 
-								<div class="alert alert-block alert-success">
-									<button type="button" class="close" data-dismiss="alert">
-										<i class="icon-remove"></i>
-									</button>
-
-									<i class="icon-ok green"></i>
-
-									欢迎使用
-									<strong class="green">
-										安居客房源系统
-									<small>(v1.2)</small>
-									</strong>
-									,这里为你提供更更全面的房源信息管理.	
-							  </div>
-
-   							
-
-
-
+							 
 								<!-- PAGE CONTENT ENDS -->
 							</div><!-- /.col -->
 						</div><!-- /.row -->

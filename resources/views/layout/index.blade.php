@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
@@ -40,7 +40,6 @@
 	</head>
 
 	<body>
-		<!-- 头 -->
 		<div class="navbar navbar-default" id="navbar">
 			<script type="text/javascript">
 				try{ace.settings.check('navbar' , 'fixed')}catch(e){}
@@ -62,7 +61,7 @@
 
 						<li class="light-blue">
 							<a data-toggle="dropdown" href="#" class="dropdown-toggle">
-								<img class="nav-user-photo" src="/static/index/avatars/user.jpg" alt="Jason's Photo" />
+								<img class="nav-user-photo" src="assets/avatars/user.jpg" alt="Jason's Photo" />
 								<span class="user-info">
 									<small>欢迎光临,</small>
 									ADMIN
@@ -100,7 +99,7 @@
 				</div><!-- /.navbar-header -->
 			</div><!-- /.container -->
 		</div>
-		<!-- 头 -->
+
 		<div class="main-container" id="main-container">
 			<script type="text/javascript">
 				try{ace.settings.check('main-container' , 'fixed')}catch(e){}
@@ -111,7 +110,6 @@
 					<span class="menu-text"></span>
 				</a>
 
-				<!-- 左 -->
 				<div class="sidebar" id="sidebar">
 					<script type="text/javascript">
 						try{ace.settings.check('sidebar' , 'fixed')}catch(e){}
@@ -131,84 +129,72 @@
 					</div><!-- #sidebar-shortcuts -->
 
 					<ul class="nav nav-list">
+						<li class="active">
+							<a href="index.html">
+								<i class="icon-dashboard"></i>
+								<span class="menu-text"> 后台控制台 </span>
+							</a>
+						</li>
+
 						<li>
 							<a href="#" class="dropdown-toggle">
-								<i class="icon-desktop"></i>
-								<span class="menu-text"> 管理员管理</span>
+								<i class="icon-list"></i>
+								<span class="menu-text"> 账户管理 </span>
 
 								<b class="arrow icon-angle-down"></b>
 							</a>
 
 							<ul class="submenu">
-								
 								<li>
-									<a href="cate_list.html">
+									<a href="money.html">
 										<i class="icon-double-angle-right"></i>
-										管理员列表
+										余额充值
 									</a>
 								</li>
 
 								<li>
-									<a href="cate_add.html">
+									<a href="recharge.html">
 										<i class="icon-double-angle-right"></i>
-										管理员添加
+										充值记录
 									</a>
 								</li>
-
+                                
+                                <li>
+									<a href="change.html">
+										<i class="icon-double-angle-right"></i>
+										密码设定
+									</a>
+								</li>
 							</ul>
 						</li>
+
 						<li>
-							<a href="custom" class="dropdown-toggle">
-								<i class="icon-desktop"></i>
+							<a href="#" class="dropdown-toggle">
+								<i class="icon-edit"></i>
 								<span class="menu-text"> 客户管理 </span>
 
 								<b class="arrow icon-angle-down"></b>
 							</a>
 
-
 							<ul class="submenu">
-								<li>
-									<a href="{{url('custom')}}">
-										<i class="icon-double-angle-right"></i>
-										客户列表
-									</a>
-								</li>
 								<li>
 									<a href="{{url('/custom/create')}}">
 										<i class="icon-double-angle-right"></i>
 										客户添加
 									</a>
 								</li>
-							</ul>
-						</li>
-						<li>
-							<a href="#" class="dropdown-toggle">
-								<i class="icon-desktop"></i>
-								<span class="menu-text"> 博文分类管理</span>
-
-								<b class="arrow icon-angle-down"></b>
-							</a>
-
-							<ul class="submenu">
-								
-								<li>
-									<a href="cate_list.html">
-										<i class="icon-double-angle-right"></i>
-										博文分类列表
-									</a>
-								</li>
 
 								<li>
-									<a href="cate_add.html">
+									<a href="{{url('/custom')}}">
 										<i class="icon-double-angle-right"></i>
-										博文分类添加
+										客户列表
 									</a>
 								</li>
 
 							</ul>
 						</li>
-							
-					</ul>
+
+					</ul><!-- /.nav-list -->
 
 					<div class="sidebar-collapse" id="sidebar-collapse">
 						<i class="icon-double-angle-left" data-icon1="icon-double-angle-left" data-icon2="icon-double-angle-right"></i>
@@ -218,8 +204,7 @@
 						try{ace.settings.check('sidebar' , 'collapsed')}catch(e){}
 					</script>
 				</div>
-				
-              
+
 				<div class="main-content">
 					<div class="breadcrumbs" id="breadcrumbs">
 						<script type="text/javascript">
@@ -229,7 +214,7 @@
 						<ul class="breadcrumb">
 							<li>
 								<i class="icon-home home-icon"></i>
-								<a href="/">首页</a>
+								<a href="#">首页</a>
 							</li>
 							<li class="active">后台管理控制台</li>
 						</ul><!-- .breadcrumb -->
@@ -265,7 +250,7 @@
 									,这里为你提供更更全面的房源信息管理.	
 							  </div>
 
-   							
+
 
 
 
@@ -274,8 +259,8 @@
 						</div><!-- /.row -->
 					</div><!-- /.page-content -->
 				</div><!-- /.main-content -->
- 
-<div class="ace-settings-container" id="ace-settings-container">
+
+				<div class="ace-settings-container" id="ace-settings-container">
 					<div class="btn btn-app btn-xs btn-warning ace-settings-btn" id="ace-settings-btn">
 						<i class="icon-cog bigger-150"></i>
 					</div>
@@ -580,5 +565,4 @@
 		</script>
 </body>
 </html>
-
 
